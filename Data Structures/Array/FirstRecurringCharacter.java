@@ -17,5 +17,4 @@ public class FirstRecurringCharacter {
 		}
 		return -1;
 	}
-	
 }
