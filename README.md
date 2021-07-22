@@ -1,16 +1,18 @@
-# Algorithms & Data Structures with Java
+English | [Português](https://github.com/data-structures-n-algorithms/java/blob/master/README-PT.md)
+
+# Algorithms & Data Structures in Java
 
 ## Introduction
-Algorithms & Data Structures(ADS) are an important topic in Software Development world. Create excellent algorithms is a skill which all developers should master and ADS are fundamental to create efficient code. This repository contains implementation of commom ADS and the goal of this repository is to help all developers, especially beginners, master ADS.
+Algorithms & Data Structures(ADS) is an important topic in Software Development world. Create excellent algorithms is a skill which all developers should master and ADS are fundamental to create efficient code. This repository contains implementation of common ADS and the goal of this repository is to help all developers, especially beginners, master ADS.
 
 ## Overview
 - **Data Structures** 
-  - [ ] Array
+  - [x] Array
   - [ ] Hash Table
   - [ ] Stacks
   - [ ] Queues
   - [ ] Linked Lists
-  - [ ] Binary Search Tree
+  - [ ] Binary Tree
   - [ ] Graph
   - [ ] Binary Heap
   - [ ] Priority Queue
