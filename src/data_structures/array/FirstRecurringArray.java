@@ -1,7 +1,9 @@
 package data_structures.array;
 
 public class FirstRecurringArray {
-    public int firstRecurringCharacter(int input[]) {
+    // The goal of this method is to find the first repeated item of the array
+    // and returns -1 if there are not repeated item
+    public static int firstRecurringCharacter(int input[]) {
         int x[] = new int[input.length];
         for(int i = 0; i < x.length; i++) {
             x[i] = -1;
@@ -14,5 +16,10 @@ public class FirstRecurringArray {
             x[i] = input[i];
         }
         return -1;
+    }
+
+    public static void main(String[] args) {
+        int array[] = {3, 6, 5, 6, 3, 2, 6};
+        System.out.print(firstRecurringCharacter(array));
     }
 }
