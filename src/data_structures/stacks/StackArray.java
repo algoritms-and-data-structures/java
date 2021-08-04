@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 // Stack implemented in Array
 public class StackArray implements Stack {
-    private E[] array = new E[10];
+    private E[] stack = new E[10];
     private int size = 0;
 
     @Override
@@ -18,14 +18,14 @@ public class StackArray implements Stack {
     public E peek() { //Returns the element at the top of the stack
         if(isEmpty()) return null;
 
-        return array[size-1];
+        return stack[size-1];
     }
 
     @Override
     public void push(E element) { //Inserts the specified element onto the top of the stack
-        if(size == array.length) increaseSize();
+        if(size == stack.length) increaseSize();
 
-        array[size] = element;
+        stack[size] = element;
         size++;
     }
 
@@ -33,14 +33,14 @@ public class StackArray implements Stack {
     public E pop() { //Removes and returns the element at the top of the stack
         if(isEmpty()) return null;
 
-        array[size-1] = null;
+        stack[size-1] = null;
         size--;
 
         return peek();
     }
 
     private void increaseSize() {
-        int newSize = array.length * 2;
-        array = Arrays.copyOf(array, newSize);
+        int newSize = stack.length * 2;
+        stack = Arrays.copyOf(stack, newSize);
     }
 }
