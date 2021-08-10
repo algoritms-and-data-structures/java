@@ -4,7 +4,7 @@ public interface Stack {
 
     public boolean isEmpty();
 
-//    public int size();
+    public int size();
 
     public E peek();
 
