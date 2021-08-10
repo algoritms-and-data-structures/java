@@ -13,6 +13,11 @@ public class QueueArrayList implements Queue {
     }
 
     @Override
+    public int size() {
+        return queue.size();
+    }
+
+    @Override
     public E peek() { // Returns the element at the front of the queue.
         if(isEmpty()) return null;
 

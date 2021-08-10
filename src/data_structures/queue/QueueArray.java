@@ -14,6 +14,11 @@ public class QueueArray implements Queue {
     }
 
     @Override
+    public int size() {
+        return size;
+    }
+
+    @Override
     public E peek() { // Returns the element at the front of the queue.
         if(isEmpty()) return null;
 
