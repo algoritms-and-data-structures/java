@@ -15,6 +15,11 @@ public class StackArray implements Stack {
     }
 
     @Override
+    public int size() {
+        return size;
+    }
+
+    @Override
     public E peek() { //Returns the element at the top of the stack
         if(isEmpty()) return null;
 
