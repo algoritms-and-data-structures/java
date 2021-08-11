@@ -3,7 +3,11 @@ package data_structures.queue;
 import java.util.ArrayList;
 
 public class QueueArrayList implements Queue {
-    private ArrayList<E> queue = new ArrayList<E>();
+    private ArrayList<E> queue;
+
+    public QueueArrayList() {
+        queue = new ArrayList<E>();
+    }
 
     @Override
     public boolean isEmpty() { // Returns true if the queue contains no elements

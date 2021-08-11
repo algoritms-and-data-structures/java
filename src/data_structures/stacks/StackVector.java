@@ -4,7 +4,11 @@ import java.util.Vector;
 
 // Stack implemented in Vector
 public class StackVector implements Stack {
-    private Vector<E> stack = new Vector();
+    private Vector<E> stack;
+
+    public StackVector() {
+        stack = new Vector();
+    }
 
     @Override
     public boolean isEmpty() { //Returns true if the stack contains no elements

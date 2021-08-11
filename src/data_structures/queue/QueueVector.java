@@ -3,7 +3,11 @@ package data_structures.queue;
 import java.util.Vector;
 
 public class QueueVector implements Queue {
-    private Vector<E> queue = new Vector<E>();
+    private Vector<E> queue;
+
+    public QueueVector() {
+        queue = new Vector<E>();
+    }
 
     @Override
     public boolean isEmpty() { // Returns true if the queue contains no elements

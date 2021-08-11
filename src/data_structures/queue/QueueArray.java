@@ -3,8 +3,13 @@ package data_structures.queue;
 import java.util.Arrays;
 
 public class QueueArray implements Queue {
-    private E[] queue = new E[10];
-    private int size = 0;
+    private E[] queue;
+    private int size;
+
+    public QueueArray() {
+        queue = new E[10];
+        size = 0;
+    }
 
     @Override
     public boolean isEmpty() { // Returns true if the queue contains no elements

@@ -4,8 +4,13 @@ import java.util.Arrays;
 
 // Stack implemented in Array
 public class StackArray implements Stack {
-    private E[] stack = new E[10];
-    private int size = 0;
+    private E[] stack;
+    private int size;
+
+    public StackArray() {
+        stack = new E[10];
+        size = 0;
+    }
 
     @Override
     public boolean isEmpty() { //Returns true if the stack contains no elements

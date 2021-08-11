@@ -4,7 +4,11 @@ import java.util.ArrayList;
 
 // Stack implemented in ArrayList
 public class StackArrayList implements Stack {
-    private ArrayList<E> stack = new ArrayList<E>();
+    private ArrayList<E> stack;
+
+    public StackArrayList() {
+        stack = new ArrayList<E>();
+    }
 
     @Override
     public boolean isEmpty() { //Returns true if the stack contains no elements
