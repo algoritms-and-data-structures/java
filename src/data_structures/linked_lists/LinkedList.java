@@ -24,7 +24,7 @@ public class LinkedList implements List {
     }
 
     @Override
-    public void append(E element) { // Inserts the element at the first position in the list
+    public void append(E element) { // Inserts the element at the last position in the list
         Node newNode = new Node(element);
 
         tail.next = newNode;
@@ -33,7 +33,7 @@ public class LinkedList implements List {
     }
 
     @Override
-    public void prepend(E element) { // Inserts the element at the last position in the list
+    public void prepend(E element) { // Inserts the element at the first position in the list
         Node newNode = new Node(element);
 
         newNode.next = head;
@@ -81,19 +81,19 @@ public class LinkedList implements List {
 
     @Override
     public E get(int index) { // Returns the element at the specified position in the list
-        if(isEmpty()) return null;
+        if (isEmpty()) return null;
 
-        if(index >= length) {
+        if (index >= length) {
             System.out.println("Cannot get: Index is larger than length");
             return null;
         }
 
-        if(index == 0) return getFirst();
+        if (index == 0) return getFirst();
 
-        if(index == length-1) return getLast();
+        if (index == length - 1) return getLast();
 
         Node tempNode = head;
-        for(int i = 0; i < index; i++) {
+        for (int i = 0; i < index; i++) {
             tempNode = tempNode.next;
         }
 
@@ -104,11 +104,11 @@ public class LinkedList implements List {
     // or returns -1 if the list is empty or the element is not in the list
     @Override
     public int find(E element) {
-        if(isEmpty()) return -1;
+        if (isEmpty()) return -1;
 
         Node tempNode = head;
-        for(int i = 0; i < length; i++) {
-            if(tempNode.element == element) return i;
+        for (int i = 0; i < length; i++) {
+            if (tempNode.element == element) return i;
 
             tempNode = tempNode.next;
         }
@@ -118,7 +118,7 @@ public class LinkedList implements List {
 
     @Override
     public E removeFirst() { // Removes and returns the element at the first position in the list
-        if(isEmpty()) {
+        if (isEmpty()) {
             System.out.println("List is Empty");
             return null;
         }
@@ -130,13 +130,13 @@ public class LinkedList implements List {
 
     @Override
     public E removeLast() { // Removes and returns the element at the last position in the list
-        if(isEmpty()) {
+        if (isEmpty()) {
             System.out.println("List is Empty");
             return null;
         }
 
         Node newTail = head;
-        for(int i = 0; i < length-2; i++) {
+        for (int i = 0; i < length - 2; i++) {
             newTail = newTail.next;
         }
 
@@ -189,15 +189,11 @@ public class LinkedList implements List {
             return true;
         }
 
-        if (tail.element == element) {
-            removeLast();
-            return true;
-        }
-
         Node tempNode = head;
+        Node aux;
         for (int i = 0; i < length - 1; i++) {
             if (tempNode.next.element == element) {
-                Node aux = tempNode.next;
+                aux = tempNode.next;
                 tempNode.next = aux.next;
 
                 length--;
