@@ -9,9 +9,9 @@ Algoritmos e Estruturas de Dados(AED) é um tópico importante no mundo de desen
 - **Estruturas de Dados** 
   - [x] Array
   - [ ] Tabela de Dispersão
-  - [ ] Pilhas
-  - [ ] Filas
-  - [ ] Listas Ligadas
+  - [x] Pilhas
+  - [x] Filas
+  - [x] Listas Ligadas
   - [ ] Árvore Binária
   - [ ] Grafo
   - [ ] Heap Binária

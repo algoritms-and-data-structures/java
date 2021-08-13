@@ -9,9 +9,9 @@ Algorithms & Data Structures(ADS) is an important topic in Software Development 
 - **Data Structures** 
   - [x] Array
   - [ ] Hash Table
-  - [ ] Stacks
-  - [ ] Queues
-  - [ ] Linked Lists
+  - [x] Stacks
+  - [x] Queues
+  - [x] Linked Lists
   - [ ] Binary Tree
   - [ ] Graph
   - [ ] Binary Heap
